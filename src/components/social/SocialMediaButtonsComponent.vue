@@ -56,12 +56,12 @@
     justify-content center
 
   .social-media__button
-    size = 2.2rem
+    $size = 2.2rem
     position relative
     padding .2rem
-    width size
-    height size
-    background-color secondary-gray
+    width $size
+    height $size
+    background-color $secondary-gray
     margin 0 .2rem
 
   .social-media__link
@@ -70,12 +70,14 @@
     display flex
     justify-content center
     align-items center
+
     &:hover
-      background-color primary-gray
+      background-color $primary-gray
+
       .social-media__icon
-        color primary-yellow
+        color $primary-yellow
 
   .social-media__icon
-    color quaternary-gray
+    color $quaternary-gray
     font-size 1.25rem
 </style>

@@ -64,20 +64,24 @@
     align-items center
     flex-direction column
 
+
   .logo__forename
   .logo__surname
     display block
 
+    @media (min-width $break-lg)
+      text-align left !important
+
   .logo__forename
     text-transform lowercase
-    color tertiary-gray
-    font-family lato-light
+    color $tertiary-gray
+    font-family $lato-light
     margin-bottom 0
 
   .logo__surname
     text-transform uppercase
-    color primary-yellow
-    font-family lato-bold
+    color $primary-yellow
+    font-family $lato-bold
     font-size 2.7rem
     line-height .8
 </style>

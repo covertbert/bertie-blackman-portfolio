@@ -1,11 +1,19 @@
 <template lang="pug">
   header.header-component.container
-    div.header-component-avatar
-      img.header-component-avatar__img.rounded-circle(src="../../assets/img/header/avatar.jpg")
-    logo-component(:forename="headerData.forename", :surname="headerData.surname", textAlign="center")
-    div.job-title
-      h2.job-title__text(v-text="headerData.title")
-    social-media-buttons-component(:buttonsArray="headerData.social")
+    div.row.header-component__row
+      div.header-component-avatar.col-lg-4
+        img.header-component-avatar__img.rounded-circle(src="../../assets/img/header/avatar.jpg")
+
+      div.logo-and-title.col-lg-4
+        logo-component(:forename="headerData.forename", :surname="headerData.surname", textAlign="center")
+        div.job-title
+          h2.job-title__text(v-text="headerData.title")
+
+      social-media-buttons-component.col-lg-4(:buttonsArray="headerData.social")
+
+        //div.container
+        //  hr.header-component__hr
+
 
 </template>
 
@@ -55,12 +63,41 @@
 <style scoped lang="stylus" rel="stylesheet/stylus">
   @import "../../assets/scss/variables.styl"
 
+  .header-component
+    @media (min-width $break-lg)
+      height 100vh
+      width 100%
+      max-width 100%
+      margin-left 0
+      margin-right 0
+      padding-right 0
+      padding-left 0
+
+  .header-component__row
+    @media (min-width $break-lg)
+      height 100%
+
   .header-component-avatar
     display flex
     justify-content center
     align-items center
     padding-top 1.7rem
     padding-bottom 1.4rem
+    padding-right 2.5rem
+
+    @media (min-width $break-lg)
+      height 100%
+      background-color $black
+      justify-content flex-end
+
+  .logo-and-title
+    display flex
+    justify-content center
+    flex-direction column
+
+    @media (min-width $break-lg)
+      align-items flex-start
+      margin-left 2rem
 
   .header-component-avatar__img
     width 9.4rem
@@ -70,6 +107,15 @@
     margin-bottom: 1.7rem
     text-align center
     font-size .8rem
-    color tertiary-gray
-    font-family lato-light
+    color $tertiary-gray
+    font-family $lato-light
+
+    @media (min-width $break-lg)
+      text-align left !important
+
+  .header-component__hr
+    background-color $quinary-gray
+    height 2px
+    margin-top 1.4rem
+
 </style>
