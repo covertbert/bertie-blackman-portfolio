@@ -1,0 +1,52 @@
+//Fade slow
+.fade-enter-active,
+.fade-leave-active {
+  transition: 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+//Fade fast
+.fade-fast-enter-active,
+.fade-fast-leave-active {
+  transition: 0.3s;
+}
+
+.fade-fast-enter,
+.fade-fast-leave-to {
+  opacity: 0;
+}
+
+//Slide
+.slide-leave-active,
+.slide-enter-active {
+  transition: 0.65s;
+}
+
+.slide-enter {
+  transform: translate(100%, 0);
+}
+
+.slide-leave-to {
+  transform: translate(100%, 0);
+}
+
+/* Transition */
+a,
+button,
+a .fa,
+.t-link-container .t-link-container__item,
+.t-link-container .t-link-container__item--blended {
+  transition: all .15s linear;
+}
+
+a,
+button,
+a .fa,
+.t-link-container .t-link-container__item,
+.t-link-container .t-link-container__item--blended {
+  transition: all .15s linear;
+}
