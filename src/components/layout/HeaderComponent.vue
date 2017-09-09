@@ -5,6 +5,7 @@
     logo-component(:forename="headerData.forename", :surname="headerData.surname", textAlign="center")
     div.job-title
       h2.job-title__text(v-text="headerData.title")
+    social-media-buttons-component(:buttonsArray="headerData.social")
 
 </template>
 
@@ -17,6 +18,7 @@
    */
   import headerData from '../../data/header'
   import LogoComponent from '../logo/LogoComponent.vue'
+  import SocialMediaButtonsComponent from '../social/SocialMediaButtonsComponent.vue'
 
   export default {
     name: 'HeaderComponent',
@@ -33,7 +35,10 @@
 
     computed: {},
 
-    components: {LogoComponent},
+    components: {
+      SocialMediaButtonsComponent,
+      LogoComponent
+    },
 
     watch: {},
 
@@ -62,6 +67,7 @@
 
   .job-title__text
     margin-top 1.3rem
+    margin-bottom: 1.7rem
     text-align center
     font-size .8rem
     color tertiary-gray
