@@ -2,10 +2,7 @@
   header.header-component.container
     div.header-component-avatar
       img.header-component-avatar__img.rounded-circle(src="../../assets/img/header/avatar.jpg")
-    div.logo
-      h1.logo__text
-        span.logo__forename(v-text="headerData.forename")
-        span.logo__surname(v-text="headerData.surname")
+    logo-component(:forename="headerData.forename", :surname="headerData.surname", textAlign="center")
     div.job-title
       h2.job-title__text(v-text="headerData.title")
 
@@ -19,6 +16,7 @@
    * todo: add documentation here!
    */
   import headerData from '../../data/header'
+  import LogoComponent from '../logo/LogoComponent.vue'
 
   export default {
     name: 'HeaderComponent',
@@ -35,7 +33,7 @@
 
     computed: {},
 
-    components: {},
+    components: {LogoComponent},
 
     watch: {},
 
@@ -49,9 +47,23 @@
   }
 </script>
 
-<style scoped lang="stylus" rel="stylesheet/scss">
+<style scoped lang="stylus" rel="stylesheet/stylus">
+  @import "../../assets/scss/variables.styl"
+
   .header-component-avatar
     display flex
     justify-content center
+    align-items center
+    padding-top 1.7rem
+    padding-bottom 1.4rem
 
+  .header-component-avatar__img
+    width 9.4rem
+
+  .job-title__text
+    margin-top 1.3rem
+    text-align center
+    font-size .8rem
+    color tertiary-gray
+    font-family lato-light
 </style>
