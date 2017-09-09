@@ -19,6 +19,6 @@
   }
 </script>
 
-<style lang="scss" rel="stylesheet/scss">
+<style lang="stylus" rel="stylesheet/stylus">
   @import "./assets/scss/app";
 </style>

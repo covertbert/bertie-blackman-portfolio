@@ -1,5 +1,5 @@
 const headerData = {
-  forname: 'Bertie',
+  forename: 'Bertie',
   surname: 'Blackman',
   title: 'Full-stack Web Developer',
   info: [
