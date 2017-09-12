@@ -51,9 +51,12 @@
 
   .social-media
     padding-left: 0
+    padding-right: 0
     list-style none
     display flex
     justify-content center
+    @media (min-width $break-lg)
+      align-items center
 
   .social-media__button
     $size = 2.2rem
@@ -72,7 +75,7 @@
     align-items center
 
     &:hover
-      background-color $primary-gray
+      text-decoration none
 
       .social-media__icon
         color $primary-yellow

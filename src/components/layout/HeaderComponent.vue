@@ -83,10 +83,11 @@
     align-items center
     padding-top 1.7rem
     padding-bottom 1.4rem
-    padding-right 2.5rem
 
     @media (min-width $break-lg)
       height 100%
+      padding-top: 0
+      padding-right 2.5rem
       background-color $black
       justify-content flex-end
 
@@ -97,10 +98,10 @@
 
     @media (min-width $break-lg)
       align-items flex-start
-      margin-left 2rem
+      padding-left 3rem
 
   .header-component-avatar__img
-    width 9.4rem
+    width 10.5rem
 
   .job-title__text
     margin-top 1.3rem
