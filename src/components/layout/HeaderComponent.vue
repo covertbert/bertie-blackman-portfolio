@@ -117,6 +117,7 @@
     font-family $lato-light
 
     @media (min-width $break-lg)
+      margin-bottom 0
       text-align left !important
 
   .right-column
@@ -138,14 +139,14 @@
     background-color $quinary-gray
     @media (min-width $break-lg)
       height 2px
-      width 90%
+      width 85%
       margin-top 1.4rem
 
   .info-section-items
     @media (min-width $break-lg)
       display flex
       justify-content space-between
-      width 90%
+      width 85%
 
   .info-section-items__block
     display flex
@@ -156,7 +157,7 @@
 
   .info-section-items__key,
   .info-section-items__value
-    font-size 1rem
+    font-size .9rem
     color $tertiary-gray
     @media (min-width $break-lg)
       font-size .8rem
@@ -167,5 +168,8 @@
     @media (min-width $break-lg)
       margin-top 0
       margin-bottom .7rem
+
+  .info-section-items__value
+    opacity .8
 
 </style>

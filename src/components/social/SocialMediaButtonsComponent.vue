@@ -56,6 +56,7 @@
     display flex
     justify-content center
     @media (min-width $break-lg)
+      margin-bottom 0
       align-items center
 
   .social-media__button
