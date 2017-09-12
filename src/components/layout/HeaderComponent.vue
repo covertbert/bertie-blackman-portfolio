@@ -4,16 +4,21 @@
       div.header-component-avatar.col-lg-4
         img.header-component-avatar__img.rounded-circle(src="../../assets/img/header/avatar.jpg")
 
-      div.logo-and-title.col-lg-4
-        logo-component(:forename="headerData.forename", :surname="headerData.surname", textAlign="center")
-        div.job-title
-          h2.job-title__text(v-text="headerData.title")
+      div.right-column.col-lg-8
+        div.row
+          div.logo-and-title.col-lg-6
+            logo-component(:forename="headerData.forename", :surname="headerData.surname", textAlign="center")
+            div.job-title
+              h2.job-title__text(v-text="headerData.title")
 
-      social-media-buttons-component.col-lg-4(:buttonsArray="headerData.social")
+          social-media-buttons-component.col-lg-6(:buttonsArray="headerData.social")
 
-        //div.container
-        //  hr.header-component__hr
-
+          div.info-section.container
+            hr.info-section__hr
+            div.info-section-items
+              div.info-section-items__block(v-for="item in headerData.info")
+                span.info-section-items__key(v-text="item.key")
+                span.info-section-items__value(v-text="item.value")
 
 </template>
 
@@ -114,9 +119,53 @@
     @media (min-width $break-lg)
       text-align left !important
 
-  .header-component__hr
+  .right-column
+    position relative
+    display flex
+    flex-direction column
+    justify-content center
+
+  .info-section
+    @media (min-width $break-lg)
+      display flex
+      flex-direction column
+      align-items center
+      position absolute
+      padding-left 0
+      bottom 30px
+
+  .info-section__hr
     background-color $quinary-gray
-    height 2px
+    @media (min-width $break-lg)
+      height 2px
+      width 90%
+      margin-top 1.4rem
+
+  .info-section-items
+    @media (min-width $break-lg)
+      display flex
+      justify-content space-between
+      width 90%
+
+  .info-section-items__block
+    display flex
+    flex-direction column
+    align-items center
+    @media (min-width $break-lg)
+      align-items flex-start
+
+  .info-section-items__key,
+  .info-section-items__value
+    font-size 1rem
+    color $tertiary-gray
+    @media (min-width $break-lg)
+      font-size .8rem
+
+  .info-section-items__key
     margin-top 1.4rem
+    font-weight 600
+    @media (min-width $break-lg)
+      margin-top 0
+      margin-bottom .7rem
 
 </style>
