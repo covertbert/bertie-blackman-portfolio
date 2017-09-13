@@ -69,7 +69,7 @@
   @import "../../assets/stylus/variables.styl"
 
   .header-component
-    padding-bottom 3rem
+    padding-bottom 2.6rem
     @media (min-width $break-md)
       padding-bottom 1.5rem
     @media (min-width $break-lg)
