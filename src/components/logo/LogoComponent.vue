@@ -56,7 +56,7 @@
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-  @import "../../assets/scss/variables.styl"
+  @import "../../assets/stylus/variables.styl"
 
   .logo
     display flex

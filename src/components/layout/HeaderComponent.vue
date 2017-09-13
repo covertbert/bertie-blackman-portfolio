@@ -66,9 +66,12 @@
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-  @import "../../assets/scss/variables.styl"
+  @import "../../assets/stylus/variables.styl"
 
   .header-component
+    padding-bottom 3rem
+    @media (min-width $break-md)
+      padding-bottom 1.5rem
     @media (min-width $break-lg)
       height 100vh
       width 100%
@@ -77,6 +80,7 @@
       margin-right 0
       padding-right 0
       padding-left 0
+      padding-bottom 0
 
   .header-component__row
     @media (min-width $break-lg)
@@ -143,7 +147,7 @@
       margin-top 1.4rem
 
   .info-section-items
-    @media (min-width $break-lg)
+    @media (min-width $break-md)
       display flex
       justify-content space-between
       width 85%
@@ -152,20 +156,20 @@
     display flex
     flex-direction column
     align-items center
-    @media (min-width $break-lg)
+    @media (min-width $break-md)
       align-items flex-start
 
   .info-section-items__key,
   .info-section-items__value
     font-size .9rem
     color $tertiary-gray
-    @media (min-width $break-lg)
+    @media (min-width $break-md)
       font-size .8rem
 
   .info-section-items__key
     margin-top 1.4rem
     font-weight 600
-    @media (min-width $break-lg)
+    @media (min-width $break-md)
       margin-top 0
       margin-bottom .7rem
 

@@ -47,7 +47,7 @@
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-  @import "../../assets/scss/variables.styl"
+  @import "../../assets/stylus/variables.styl"
 
   .social-media
     padding-left: 0
@@ -60,7 +60,7 @@
       align-items center
 
   .social-media__button
-    $size = 2.2rem
+    $size = 2rem
     position relative
     padding .2rem
     width $size
