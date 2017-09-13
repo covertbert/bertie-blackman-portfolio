@@ -20,5 +20,5 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  @import "./assets/scss/app";
+  @import "assets/stylus/app";
 </style>

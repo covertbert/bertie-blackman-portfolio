@@ -1,4 +1,7 @@
-<template>
+<template lang="pug">
+  main.page-body
+    page-section-component(:pageTitle="introData.title", :pageSubTitle="introData.subTitle")
+      div.container(v-html="introData.body")
 </template>
 
 <script type="text/babel">
@@ -9,6 +12,9 @@
    * todo: add documentation here!
    */
 
+  import introData from '../data/intro'
+  import PageSectionComponent from '../components/layout/PageSectionComponent.vue'
+
   export default {
     name: 'IndexPage',
 
@@ -17,12 +23,15 @@
     props: {},
 
     data () {
-      return {}
+      return {
+        introData
+      }
     },
 
     computed: {},
 
     components: {
+      PageSectionComponent
     },
 
     watch: {},
