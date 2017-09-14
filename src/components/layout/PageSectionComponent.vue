@@ -1,10 +1,12 @@
 <template lang="pug">
   section.page-section.row
-    div.page-section__header.col-lg-4
+    div.page-section__header.col-lg-4(
+    :class="{ 'page-section__header--lighter' : headerLighter }")
       div.container
         h2.page-section__title(v-text="pageTitle")
         h4.page-section__sub-title(v-text="pageSubTitle")
-    div.page-section__body.col-lg-8
+    div.page-section__body.col-lg-8(
+    :class="{ 'page-section__body--lighter' : headerLighter }")
       slot
 </template>
 
@@ -29,6 +31,10 @@
       pageSubTitle: {
         type: String,
         required: true
+      },
+      headerLighter: {
+        type: Boolean,
+        default: false
       }
     },
 
@@ -64,6 +70,8 @@
     @media (min-width $break-lg)
       border-top 0
       border-bottom 0
+      &--lighter
+        background-color $black
 
   .page-section__body
     padding-top 1.7rem
@@ -71,6 +79,9 @@
     background-color $primary-gray
     @media (min-width $break-lg)
       background-color $black
+    &--lighter
+      @media (min-width $break-lg)
+        background-color $primary-gray
 
   .page-section__title,
   .page-section__sub-title
