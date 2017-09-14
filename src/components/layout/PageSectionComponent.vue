@@ -86,15 +86,17 @@
   .page-section__title,
   .page-section__sub-title
     color $tertiary-gray
+    @media (min-width $break-lg)
+      text-align right
 
   .page-section__title
-    margin-bottom 1rem
-    font-size 1.3rem
+    margin-bottom .7rem
+    font-size .9rem
     text-transform uppercase
 
   .page-section__sub-title
     margin-bottom 0
     opacity .8
-    font-size .9rem
+    font-size .8rem
     font-weight 300
 </style>

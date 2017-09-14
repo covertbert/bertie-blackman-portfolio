@@ -63,17 +63,19 @@
 
   .expertise-block
     display flex
-    margin-bottom 1.7rem
+    &:not(:nth-last-child(-n+2))
+      margin-bottom 1.4rem
 
   .expertise-block__figure
     color $primary-yellow
     font-weight 700
 
   .expertise-block__body
-    margin-left 1rem
+    margin-left .6rem
+    padding-top 0.2rem
 
   .expertise-block__body-title
     color $tertiary-gray
     text-transform uppercase
-    font-size 1.2rem
+    font-size 1rem
 </style>
