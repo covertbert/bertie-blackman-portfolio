@@ -61,6 +61,9 @@
 <style scoped lang="stylus" rel="stylesheet/stylus">
   @import "../../assets/stylus/variables.styl"
 
+  .page-section
+    margin 0 10px
+
   .page-section__header
     background-color $black-dark
     border-top 1px solid $quinary-gray

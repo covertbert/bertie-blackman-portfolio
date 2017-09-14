@@ -85,6 +85,7 @@
   .header-component__row
     @media (min-width $break-lg)
       height 100%
+      margin 0 10px
 
   .header-component-avatar
     display flex
