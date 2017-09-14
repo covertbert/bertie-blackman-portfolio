@@ -1,11 +1,11 @@
 <template lang="pug">
   section.page-section.row
-    div.page-section__header.col-lg-4(
+    div.page-section__header.col-lg-3(
     :class="{ 'page-section__header--lighter' : headerLighter }")
       div.container
         h2.page-section__title(v-text="pageTitle")
         h4.page-section__sub-title(v-text="pageSubTitle")
-    div.page-section__body.col-lg-8(
+    div.page-section__body.col-lg-9(
     :class="{ 'page-section__body--lighter' : headerLighter }")
       slot
 </template>

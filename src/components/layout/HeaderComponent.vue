@@ -1,10 +1,10 @@
 <template lang="pug">
   header.header-component.container
     div.row.header-component__row
-      div.header-component-avatar.col-lg-4
+      div.header-component-avatar.col-lg-3
         img.header-component-avatar__img.rounded-circle(src="../../assets/img/header/avatar.jpg")
 
-      div.right-column.col-lg-8
+      div.right-column.col-lg-9
         div.row
           div.logo-and-title.col-lg-6
             logo-component(:forename="headerData.forename", :surname="headerData.surname", textAlign="center")
