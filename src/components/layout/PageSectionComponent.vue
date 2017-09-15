@@ -62,7 +62,7 @@
   @import "../../assets/stylus/variables.styl"
 
   .page-section
-    margin 0 10px
+    margin 0
 
   .page-section__header
     background-color $black-dark
