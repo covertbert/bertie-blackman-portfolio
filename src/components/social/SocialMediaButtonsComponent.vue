@@ -75,9 +75,9 @@
     justify-content center
     align-items center
 
-    &:hover
+    &:hover,
+    &:active
       text-decoration none
-
       .social-media__icon
         color $primary-yellow
 
