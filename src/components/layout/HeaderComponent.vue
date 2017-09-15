@@ -5,15 +5,17 @@
         img.header-component-avatar__img.rounded-circle(src="../../assets/img/header/avatar.jpg")
 
       div.right-column.col-lg-9
-        div.row
-          div.logo-and-title.col-lg-6
-            logo-component(:forename="headerData.forename", :surname="headerData.surname", textAlign="center")
-            div.job-title
-              h2.job-title__text(v-text="headerData.title")
+        div.container.right-column__inner
+          div
+          div.row.logo-title-social
+            div.logo-and-title.col-lg-6
+              logo-component(:forename="headerData.forename", :surname="headerData.surname", textAlign="center")
+              div.job-title
+                h2.job-title__text(v-text="headerData.title")
 
-          social-media-buttons-component.col-lg-6(:buttonsArray="headerData.social")
+            social-media-buttons-component.col-lg-6(:buttonsArray="headerData.social")
 
-          div.info-section.container
+          div.info-section
             hr.info-section__hr
             div.info-section-items
               div.info-section-items__block(v-for="item in headerData.info")
@@ -97,7 +99,7 @@
     @media (min-width $break-lg)
       height 100%
       padding-top: 0
-      padding-right 2.5rem
+      padding-right 1.7rem
       background-color $black
       justify-content flex-end
 
@@ -108,7 +110,10 @@
 
     @media (min-width $break-lg)
       align-items flex-start
-      padding-left 3rem
+
+  .logo-title-social
+    @media (min-width $break-lg)
+      margin-top 6.2rem
 
   .header-component-avatar__img
     width 10.5rem
@@ -131,27 +136,28 @@
     flex-direction column
     justify-content center
 
+  .right-column__inner
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
   .info-section
     @media (min-width $break-lg)
-      display flex
-      flex-direction column
-      align-items center
-      position absolute
       padding-left 0
-      bottom 30px
+      margin-bottom 1.2rem
 
   .info-section__hr
     background-color $quinary-gray
     @media (min-width $break-lg)
       height 2px
-      width 85%
+      width 100%
       margin-top 1.4rem
 
   .info-section-items
     @media (min-width $break-md)
       display flex
       justify-content space-between
-      width 85%
 
   .info-section-items__block
     display flex
