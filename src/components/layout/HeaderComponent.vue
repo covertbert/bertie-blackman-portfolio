@@ -2,7 +2,7 @@
   header.header-component.container
     div.row.header-component__row
       div.header-component-avatar.col-lg-3
-        img.header-component-avatar__img.rounded-circle(src="../../assets/img/header/avatar.jpg")
+        img.header-component-avatar__img.rounded-circle(src="../../assets/img/header/avatar@2x.jpg")
 
       div.right-column.col-lg-9
         div.container.right-column__inner
