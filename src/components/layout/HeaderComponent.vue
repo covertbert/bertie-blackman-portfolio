@@ -113,7 +113,7 @@
 
   .logo-title-social
     @media (min-width $break-lg)
-      margin-top 6.2rem
+      margin-top 6.8rem
 
   .header-component-avatar__img
     width 10.5rem
@@ -150,7 +150,7 @@
   .info-section
     @media (min-width $break-lg)
       padding-left 0
-      margin-bottom 1.2rem
+      margin-bottom 1.8rem
 
   .info-section__hr
     background-color $quinary-gray
