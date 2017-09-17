@@ -11,6 +11,8 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+console.log('test')
+
 Vue.use(bootstrapReboot)
 Vue.use(bootstrap)
 Vue.use(bootstrapGrid)
