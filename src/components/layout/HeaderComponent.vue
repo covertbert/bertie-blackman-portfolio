@@ -132,15 +132,20 @@
 
   .right-column
     position relative
+    padding-right 0
+    padding-left 0
     display flex
     flex-direction column
     justify-content center
+    @media (min-width $break-lg)
+      padding-right 15px
+      padding-left 15px
 
   .right-column__inner
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height 100%
+    display flex
+    flex-direction column
+    justify-content space-between
 
   .info-section
     @media (min-width $break-lg)
