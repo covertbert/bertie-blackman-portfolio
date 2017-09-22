@@ -36,7 +36,7 @@
 
     data () {
       return {
-        currentSrc: null // setting the attribute to null to display the placeholder
+        currentSrc: null
       }
     },
 
@@ -52,30 +52,35 @@
     },
 
     mounted () {
-      var loResImg, hiResImg, context
-      loResImg = new Image()
-      hiResImg = new Image()
+      const loResImg = new Image()
+      const hiResImg = new Image()
 
-      context = this.$el.getElementsByTagName('canvas')[0].getContext('2d') // get the context of the canvas
+      let context = null
+
+      context = this.$el.getElementsByTagName('canvas')[0].getContext('2d')
 
       loResImg.onload = () => {
         context.drawImage(loResImg, 0, 0)
-        this.currentSrc = this.loResSrc // setting the attribute to loResSrc to display the lo-res image
+        this.currentSrc = this.loResSrc
       }
+
       hiResImg.onload = () => {
-        this.currentSrc = this.hiResSrc // setting the attribute to hiResSrc to display the hi-res image
+        this.currentSrc = this.hiResSrc
       }
-      loResImg.src = this.loResSrc // loading the lo-res image
-      hiResImg.src = this.hiResSrc // loading the hi-res image
+
+      loResImg.src = this.loResSrc
+      hiResImg.src = this.hiResSrc
     }
   }
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
 
+  .avatar-component__placeholder
+    height 10.5rem
+
   .avatar-component__image, .avatar-component__placeholder
     width 10.5rem
-    height 10.5rem
 
   .avatar-component__placeholder
     background-color: $tertiary-gray
