@@ -1,3 +1,3 @@
 export default {
-  drawerNavIsActive: false
+  siteIsLoading: true
 }
