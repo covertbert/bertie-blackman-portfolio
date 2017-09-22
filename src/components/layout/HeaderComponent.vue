@@ -2,7 +2,8 @@
   header.header-component.container
     div.row.header-component__row
       div.header-component-avatar.col-lg-3
-        img.header-component-avatar__img.rounded-circle(src="../../assets/img/header/avatar@2x.jpg")
+
+        avatar-component(:hiResSrc="hiResAvatar", :lowResSrc="lowResAvatar")
 
       div.right-column.col-lg-9
         div.container.right-column__inner
@@ -34,6 +35,9 @@
   import headerData from '../../data/header'
   import LogoComponent from '../logo/LogoComponent.vue'
   import SocialMediaButtonsComponent from '../social/SocialMediaButtonsComponent.vue'
+  import AvatarComponent from '../avatar/AvatarComponent.vue'
+  import hiResAvatar from '../../assets/img/header/avatar@2x.jpg'
+  import lowResAvatar from '../../assets/img/header/avatar.jpg'
 
   export default {
     name: 'HeaderComponent',
@@ -44,13 +48,16 @@
 
     data () {
       return {
-        headerData
+        headerData,
+        hiResAvatar,
+        lowResAvatar
       }
     },
 
     computed: {},
 
     components: {
+      AvatarComponent,
       SocialMediaButtonsComponent,
       LogoComponent
     },
@@ -114,9 +121,6 @@
   .logo-title-social
     @media (min-width $break-lg)
       margin-top 6.8rem
-
-  .header-component-avatar__img
-    width 10.5rem
 
   .job-title__text
     margin-top 1.3rem
