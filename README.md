@@ -18,4 +18,8 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Deploying via git hooks
+
+* Add remote: `git remote add production ssh://serveradmin@178.62.61.225:2345/home/serveradmin/portfolio-repo`
+* Deploy master: `git push production master`
+
