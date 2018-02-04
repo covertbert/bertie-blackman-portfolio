@@ -4,6 +4,7 @@
     router-view
     footer-component
     preloader-component
+    coming-soon-component
 </template>
 
 <script type="text/babel">
@@ -11,10 +12,12 @@
   import HeaderComponent from './components/layout/HeaderComponent'
   import FooterComponent from './components/layout/FooterComponent'
   import PreloaderComponent from './components/preloader/PreloaderComponent.vue'
+  import ComingSoonComponent from './components/tmp/ComingSoonComponent'
 
   export default {
     name: 'app',
     components: {
+      ComingSoonComponent,
       PreloaderComponent,
       HeaderComponent,
       FooterComponent
