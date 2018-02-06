@@ -4,7 +4,7 @@
     router-view
     footer-component
     preloader-component
-    coming-soon-component
+    //coming-soon-component
 </template>
 
 <script type="text/babel">

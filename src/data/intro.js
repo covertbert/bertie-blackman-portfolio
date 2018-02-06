@@ -2,8 +2,9 @@ const introData = {
   title: 'intro',
   subTitle: `What I'm all about`,
   body: `
-  <p>Lorem ipsum dolor sit amet, consectetuer <a href="">adipiscing</a> elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.</p>
-  <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.</p>`
+        <p>Throughout my professional life I have always endeavoured to complete my work with enthusiasm, efficiency and attention to detail. I have worked predominantly within an agency environment and have therefore learned the importance of taking constructive criticism in order to become the strongest possible member of my team.</p>
+        <p>I work especially well under the pressure of tight deadlines and, consequently, I can respond flexibly and intelligently to the ever-changing demands of a project. My co-workers would describe me as personable, dependable and passionate about the work I produce. As a result of this dedication, I consistently take time outside of work to improve my abilities beyond what is required of me.</p>
+        `
 }
 
 export default introData

@@ -3,7 +3,7 @@
     span.expertise-block__figure(v-text="formatBlockFigure(blockFigure)")
     div.expertise-block__body
       h3.expertise-block__body-title(v-text="blockTitle")
-      p.expertise-block__body-copy(v-text="blockCopy")
+      p.expertise-block__body-copy(v-html="blockCopy")
 </template>
 
 <script type="text/babel">
