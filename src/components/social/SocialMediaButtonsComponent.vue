@@ -1,7 +1,7 @@
 <template lang="pug">
   ul.social-media
     li.social-media__button(v-for="button in buttonsArray")
-      a.social-media__link(:href="button.link")
+      a.social-media__link(:href="button.link" target="_blank")
         i.social-media__icon.fa.fa-lg(:class="`fa-${button.slug}`")
 
 </template>

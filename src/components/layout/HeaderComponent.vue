@@ -78,7 +78,7 @@
   @import "../../assets/stylus/variables.styl"
 
   .header-component
-    padding-bottom 2.6rem
+    padding-bottom 2.3rem
     @media (min-width $break-md)
       padding-bottom 1.5rem
     @media (min-width $break-lg)
@@ -100,8 +100,8 @@
     display flex
     justify-content center
     align-items center
-    padding-top 1.7rem
-    padding-bottom 1.4rem
+    padding-top 1.5rem
+    padding-bottom 1.2rem
 
     @media (min-width $break-lg)
       height 100%
@@ -158,6 +158,8 @@
 
   .info-section__hr
     background-color $quinary-gray
+    margin-top .8rem
+    margin-bottom .4rem
     @media (min-width $break-lg)
       height 2px
       width 100%
@@ -183,7 +185,7 @@
       font-size .8rem
 
   .info-section-items__key
-    margin-top 1.4rem
+    margin-top 1.2rem
     font-weight 600
     @media (min-width $break-md)
       margin-top 0

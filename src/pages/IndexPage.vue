@@ -1,21 +1,4 @@
 <template lang="pug">
-  main.page-body
-    page-section-component(
-    :pageTitle="introData.title",
-    :pageSubTitle="introData.subTitle")
-      div.container(v-html="introData.body")
-    page-section-component(
-    :pageTitle="expertiseData.title",
-    :pageSubTitle="expertiseData.subTitle",
-    :headerLighter="true")
-      div.container
-        div.row
-          expertise-block-component(
-          v-for="(item, index) in expertiseData.items",
-          :key="index",
-          :blockFigure="index",
-          :blockTitle="item.title",
-          :blockCopy="item.body")
 </template>
 
 <script type="text/babel">
