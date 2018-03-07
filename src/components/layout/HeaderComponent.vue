@@ -21,7 +21,7 @@
             div.info-section-items
               div.info-section-items__block(v-for="item in headerData.info")
                 span.info-section-items__key(v-text="item.key")
-                span.info-section-items__value(v-text="item.value")
+                span.info-section-items__value(v-html="item.value")
 
 </template>
 
@@ -120,7 +120,7 @@
 
   .logo-title-social
     @media (min-width $break-lg)
-      margin-top 6.8rem
+      margin-top 6.6rem
 
   .job-title__text
     margin-top 1.3rem

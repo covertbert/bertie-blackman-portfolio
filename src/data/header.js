@@ -3,9 +3,9 @@ const headerData = {
   surname: 'Blackman',
   title: 'Full-stack Web Developer',
   info: [
-    { key: 'Location', value: 'Manchester, UK' },
-    { key: 'Phone', value: '07512 255 320' },
-    { key: 'Email', value: 'info@bertieblackman.co.uk' }
+    { key: 'Location', value: '<a target="_blank" href="http://maps.google.com/?q=1200 Castlefield, Manchester, UK">Manchester, UK</a>' },
+    { key: 'Phone', value: '<a href="tel:07512 255 320">07512 255 320</a>' },
+    { key: 'Email', value: '<a href="mailto:info@bertieblackman.co.uk">info@bertieblackman.co.uk</a>' }
   ],
   social: [
     { slug: 'github', link: 'https://github.com/covertbert' },
