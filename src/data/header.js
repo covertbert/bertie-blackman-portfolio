@@ -9,8 +9,7 @@ const headerData = {
   ],
   social: [
     { slug: 'github', link: 'https://github.com/covertbert' },
-    { slug: 'stack-overflow', link: 'https://stackoverflow.com/users/3072027/bert' },
-    { slug: 'twitter', link: '' }
+    { slug: 'stack-overflow', link: 'https://stackoverflow.com/users/3072027/bert' }
   ]
 }
 
