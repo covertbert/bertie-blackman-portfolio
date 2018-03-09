@@ -168,13 +168,13 @@
   .info-section-items
     @media (min-width $break-md)
       display flex
-      justify-content space-between
 
   .info-section-items__block
     display flex
     flex-direction column
     align-items center
     @media (min-width $break-md)
+      margin-right 3rem
       align-items flex-start
 
   .info-section-items__key,
