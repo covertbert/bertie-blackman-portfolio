@@ -1,6 +1,7 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
+import VueAnalytics from 'vue-analytics'
 import bootstrapReboot from 'bootstrap/scss/bootstrap-reboot.scss'
 import bootstrap from 'bootstrap/scss/bootstrap.scss'
 import bootstrapGrid from 'bootstrap/scss/bootstrap-grid.scss'
@@ -15,6 +16,9 @@ Vue.use(bootstrapReboot)
 Vue.use(bootstrap)
 Vue.use(bootstrapGrid)
 Vue.use(fontAwesomeCSS)
+Vue.use(VueAnalytics, {
+  id: 'UA-47424899-2'
+})
 
 /* eslint-disable no-new */
 new Vue({
