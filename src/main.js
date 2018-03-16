@@ -17,7 +17,8 @@ Vue.use(bootstrap)
 Vue.use(bootstrapGrid)
 Vue.use(fontAwesomeCSS)
 Vue.use(VueAnalytics, {
-  id: 'UA-47424899-2'
+  id: 'UA-47424899-2',
+  router
 })
 
 /* eslint-disable no-new */
@@ -26,5 +27,5 @@ new Vue({
   router,
   store,
   template: '<App/>',
-  components: {App}
+  components: { App }
 })
