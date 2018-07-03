@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-    - source: /config
+    source: /config
     destination: /home/webadmin/sites/bertieblackman.co.uk/html
