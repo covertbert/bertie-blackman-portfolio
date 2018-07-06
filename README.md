@@ -4,6 +4,8 @@
 
 View my portfolio site [here](https://bertieblackman.co.uk/#/)
 
+![Build Status](https://codebuild.eu-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoidlhlU1BJek5xaGY0N2FSZmpOODNrMm5ESmNXVUo0UnB0aWhzbHhvR0J2aDJ0OGdLQTFlSWdJcjNqVWQwekNQc3QyVG1CcnFuZnRCaUI5cjVkbTJFQ0NFPSIsIml2UGFyYW1ldGVyU3BlYyI6IlNkZ2h0VnVZVTJMSDFlU3YiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+
 ## Build Setup
 
 ``` bash
