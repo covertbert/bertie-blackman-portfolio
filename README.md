@@ -1,6 +1,4 @@
-# bertie-blackman-cv
-
-> My portfolio
+# Portfolio
 
 View my portfolio site [here](https://bertieblackman.co.uk/#/)
 
