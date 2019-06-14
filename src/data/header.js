@@ -3,8 +3,8 @@ const headerData = {
   surname: 'Blackman',
   title: 'Full-stack Web Developer',
   info: [
-    { key: 'Email', value: '<a href="mailto:info@bertieblackman.co.uk">info@bertieblackman.co.uk</a>' },
-    { key: 'Location', value: '<a target="_blank" href="http://maps.google.com/?q=1200 Castlefield, Manchester, UK">Manchester, UK</a>' }
+    { key: 'Email', value: '<a href="mailto:info@bertie.dev">info@bertie.dev</a>' },
+    { key: 'Location', value: '<a target="_blank" href="http://maps.google.com/?q=1200 High Peak, UK">High Peak, UK</a>' }
   ],
   social: [
     { slug: 'github', link: 'https://github.com/covertbert' },
