@@ -53,7 +53,7 @@
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "ora": "^1.2.0",
     "pug": "^2.0.4",
-    "pug-loader": "^2.3.0",
+    "pug-loader": "^2.4.0",
     "rimraf": "^2.6.0",
     "sass-loader": "^6.0.7",
     "semver": "^6.2.0",
