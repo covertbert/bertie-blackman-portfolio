@@ -1,8 +1,8 @@
 # Portfolio
 
-View my portfolio site [here](https://bertieblackman.co.uk/#/)
+View my portfolio site [here](https://bertie.dev)
 
-![Build Status](https://codebuild.eu-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoidlhlU1BJek5xaGY0N2FSZmpOODNrMm5ESmNXVUo0UnB0aWhzbHhvR0J2aDJ0OGdLQTFlSWdJcjNqVWQwekNQc3QyVG1CcnFuZnRCaUI5cjVkbTJFQ0NFPSIsIml2UGFyYW1ldGVyU3BlYyI6IlNkZ2h0VnVZVTJMSDFlU3YiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1d8b5cfb-0108-464f-85f6-45553182a979/deploy-status)](https://app.netlify.com/sites/suspicious-euclid-120ca5/deploys)
 
 ## Build Setup
 
