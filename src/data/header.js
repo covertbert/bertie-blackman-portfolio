@@ -1,7 +1,7 @@
 const headerData = {
   forename: 'Bertie',
   surname: 'Blackman',
-  title: 'Full-stack Web Developer',
+  title: 'Frontend Software Engineer',
   info: [
     { key: 'Email', value: '<a href="mailto:info@bertie.dev">info@bertie.dev</a>' },
     { key: 'Location', value: '<a target="_blank" href="http://maps.google.com/?q=High Peak, UK">High Peak, UK</a>' }
